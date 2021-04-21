@@ -29,11 +29,11 @@ const superEventHandler = {
     }
     ,
     changeTextResize: function () {
-        title.textContent = "qrohiphop is so hard";
+        title.innerHTML = "qrohiphop is so hard";
     },
 
     changTextWhenRightClick: function () {
-        title.textContent = "This is right click event";
+        title.innerHTML = "This is right click event";
     }
 }
 title.addEventListener("mouseover", superEventHandler.changeColorWhenOver);
