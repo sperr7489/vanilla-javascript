@@ -42,3 +42,6 @@ window.addEventListener("resize", superEventHandler.changeTextResize);
 title.addEventListener("contextmenu", superEventHandler.changTextWhenRightClick);
 
 
+//  object로 만들었을 때 각각의 element들에 ,를 붙여줘야 한다. 
+// object는 key : value값으로 이루어져 있는데 함수를 element로 추가하려고 할 때도 function이라는  value값을 
+// 넣을 수 있다. 
