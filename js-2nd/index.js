@@ -1,5 +1,4 @@
 
-const WINDOWSIZE = window.innerWidth;
 let BODYCOLOR = document.body.style.backgroundColor;
 
 
