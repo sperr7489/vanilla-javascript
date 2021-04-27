@@ -13,7 +13,6 @@ function deleteToDo(event) {
     const li = btn.parentNode;
     toDoList.removeChild(li);
     const cleanToDos = toDos.filter(function (toDo) {
-        console.log(toDo);
         return toDo.id !== parseInt(li.id);
         //삭제 버튼이눌린 것과 다른 아이디를 가지고 있는 것들은 새로운 cleanToDos 배열로 설정하여
         // 새로운 todo로 만들어준다. 
