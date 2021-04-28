@@ -12,14 +12,13 @@
     <h1><b>Random number Game</b></h1>
 
     <div class="range-number">
-        <span class= "range-number__info">Generate a number between 0 and 130</span>
-        <input type="range" name="number-range" class="input-range" list="tickmarks">
+        <span class= "range-number__info">Generate a number between 0 and 100</span>
+        <input type="range" max="100" value="30" name="number-range" class="input-range" list="tickmarks">
 
         <form action="" class="range-number__guess">
             <label for="guess-number">Guess the Number</label>
-            <input type="text" placeholder="number" name="guess-number" class="guess-number">
-            <button type="submit" class="result-check">play</button>
-            <button type="submit" class="random-number">create</button>
+            <input type="number" placeholder="number" name="guess-number" class="guess-number">
+            <button type="button" class="result-check">play</button>
         </form>
         <div class="input-range__status">
             <span class="input-range__value"> </span>

@@ -1,10 +1,8 @@
 const range = document.querySelector(".input-range");
 const rangeInfo = document.querySelector(".range-number__info");
-const createBtn = document.querySelector(".random-number");
 const inputGuess = document.querySelector(".guess-number");
 const playBtn = document.querySelector(".result-check");
 const inputStatus = document.querySelector(".input-range__status");
-
 let machineVal;
 let rangeVal;
 function changeRange(event) {
@@ -15,7 +13,6 @@ function changeRange(event) {
 }
 function createNum(event) {
     machineVal = Math.floor(Math.random() * rangeVal);
-    console.log("machineVal은" + machineVal);
 }
 
 function checkBlank() {
@@ -25,10 +22,10 @@ function checkBlank() {
 }
 function checkResult(event) {
     checkBlank();
-
+    createNum(event);
     if (inputGuess.value !== "") {
 
-        if (inputGuess.value === machineVal) {
+        if (parseInt(inputGuess.value) === machineVal) {
             inputStatus.children[0].innerText = `you Choose: ${inputGuess.value}, 
             the Machine Choose: ${machineVal}`;
             inputStatus.children[1].innerText = `You win!!!`;
@@ -41,9 +38,8 @@ function checkResult(event) {
 
 
 }
-
+console.log()
 range.addEventListener("change", changeRange);
-createBtn.addEventListener("click", createNum);
 playBtn.addEventListener("click", checkResult);
 
 

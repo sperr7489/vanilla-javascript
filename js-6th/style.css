@@ -14,3 +14,6 @@ div.range-number {
   display: flex;
   flex-direction: column;
 }
+.input-range__status:nth-child(2) {
+  font-weight: 900;
+}
