@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+    <h1><b>Random number Game</b></h1>
+
+    <div class="range-number">
+        <span class= "range-number__info">Generate a number between 0 and 130</span>
+        <input type="range" name="number-range" class="input-range" list="tickmarks">
+
+        <form action="" class="range-number__guess">
+            <label for="guess-number">Guess the Number</label>
+            <input type="text" placeholder="number" name="guess-number" class="guess-number">
+            <button type="submit" class="result-check">play</button>
+            <button type="submit" class="random-number">create</button>
+        </form>
+        <div class="input-range__status">
+            <span class="input-range__value"> </span>
+            <span class="input-range__value"> </span>
+        </div>
+        <span class = "range-game__result"></span>
+    </div>
+
+    <datalist id="tickmarks">
+
+        <option value="0"></option>
+        <option value="20"></option>
+        <option value="40"></option>
+        <option value="60"></option>
+        <option value="80"></option>
+        <option value="100"></option>
+
+    </datalist>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

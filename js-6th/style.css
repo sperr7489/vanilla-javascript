@@ -1,0 +1,16 @@
+div.range-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.input-range {
+  width: 300px;
+}
+.range-number__guess > input {
+  width: 50px;
+}
+.input-range__status {
+  display: flex;
+  flex-direction: column;
+}
